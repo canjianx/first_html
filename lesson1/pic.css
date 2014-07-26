@@ -1,0 +1,69 @@
+/* icons begin*/
+.icon {background-image: url("nav_sprite_t.png"); width:32px; height:32px;}
+.icon_layout {background-position: 0 0 }
+.icon_barChart {background-position: -50px 0}
+.icon_lineChart { background-position: -100px 0}
+.icon_pieChart {background-position: -150px 0}
+
+.icon_bkglineChart{background-position: 0 -50px}
+.icon_scatterChart{background-position: -50px -50px}
+.icon_arrowsS{background-position: -100px -50px; width:8px; height:5px;}
+.icon_newPage{background-position: -150px -50px; width:15px; height:20px;}
+
+.icon_table_P_E {background-position: 0 -100px; margin-top:5px; height:22px;}
+.icon_table_Transaction{background-position: -50px -100px;  margin-top:5px; height:22px;}
+.icon_table_Gainloss {background-position: -100px -100px; margin-top:5px; height:22px;}
+.icon_table_P_P {background-position: -150px -100px; margin-top:5px; height:22px;}
+
+.icon_middle{background-image: url("/rpb/assets/nav_sprite_t.png"); width:22px; height:22px;}
+
+.icon_add {background-position: 0 -150px;}
+.icon_paint{background-position: -50px -150px;}
+.icon_cut {background-position: -100px -150px;}
+.icon_common_table {background-position: 0px -700px;margin-top:5px; height:22px;}
+
+.icon_save {background-position: 0 -200px;}
+.icon_saveAs {background-position: -50px -200px;}
+.icon_text {background-position: -100px -200px;}
+.icon_graph {background-position: 0 -200px;}
+
+.icon_image{background-position: 0 -250px;}
+.icon_header{background-position: -50px -250px;}
+.icon_footer{background-position: -100px -250px;}
+.icon_dropDown{background-position: -150px -250px;}
+
+.icon_small {background-image: url("/rpb/assets/nav_sprite_t.png"); width:16px; height:16px; display: inline-block;}
+.icon_bold{background-position: 0px -300px;}
+.icon_font_color{background-position: -50px -300px;}
+.icon_font_style{background-position: -100px -300px;}
+.icon_text_decoration{background-position: -150px -300px;}
+
+.icon_align_left{background-position: 0px -350px;}
+.icon_align_center{background-position: -50px -350px;}
+.icon_align_right{background-position: -100px -350px;}
+.icon_border{background-position: -150px -350px;}
+
+.icon_bk_color{background-position: 0px -400px;}
+.icon_line_width{background-position: -50px -400px;}
+.icon_line_color{background-position: -100px -400px;}
+
+.icon_copy{background-position: 0px -450px;}
+.icon_paste{background-position: -50px -450px;}
+.icon_pageAndTml {display: inline-block; vertical-align: middle; margin-top: -4px; background-position: -100px -450px; width:13px;height:17px;}
+.icon_removePage {background-position: -150px -450px; width:12px; height:18px; cursor: pointer;}
+
+.icon_gridBorder_h{background-position: 0px -500px; width:25px; height:25px;}
+.icon_gridBorder_v{background-position: -50px -500px; width:25px; height:25px;}
+.icon_gridBorder_both{background-position: -100px -500px; width:25px; height:25px;}
+.icon_gridBorder_None{background-position: -150px -500px; width:25px; height:25px;}
+
+.icon_hideprop:hover{background-position: 0px -600px; width:20px; height:20px;}
+.icon_hideprop{background-position: -50px -600px; width:20px; height:20px;}
+.icon_showprop:hover{background-position: -100px -600px; width:20px; height:20px;}
+.icon_showprop{background-position: -150px -600px; width:20px; height:20px;}
+
+
+.icon_Portrait{background-position: 0px -650px; width:22px; height:22px; display: inline-block; vertical-align:middle;margin-right:15px;}
+.icon_Landscape{background-position: -50px -650px; width:22px; height:22px; display: inline-block; vertical-align:middle;margin-right:15px;}
+.icon_arrows1N{background-position: -100px -650px; width:14px;height:13px;display: inline-block;}
+.icon_arrows1S{background-position: -150px -650px; width:14px;height:13px;display: inline-block;}
