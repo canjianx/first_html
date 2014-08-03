@@ -1,0 +1,77 @@
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<title>Table View</title>
+	<style type="text/css">
+		.tableview {
+			width: 400px; 
+			background-color: #eee;
+			height: 600px;
+			border-left: solid 1px #ddd;
+			border-bottom: solid 1px #ddd;
+			border-right: solid 1px #ddd;
+		}
+		.tableview .head table {border-collapse: collapse; border-spacing: 0; padding:0px; margin:0px; width: 100%; background-color: #fefefe;}
+		.tableview .head td{
+			border-top: solid 2px #206F96;
+			text-align: center;
+			border-right: solid 1px #ddd;
+			border-left: solid 1px #ddd;
+			border-bottom: solid 1px #ddd;
+			background-color: #ccc;
+			height: 30px;
+			cursor: pointer;
+		}
+		p{margin: 0px; padding: 0px;}
+		.tableview .head td:first-child {border-left: none;}
+		.tableview .head td:last-child {border-right: none;}
+		.tableview .head .select{background-color: #fff;}
+		.tableview .content {padding: 5px; word-break:break-all;}
+	</style>
+	<script type="text/javascript" src="jquery-min.js"></script>
+	<script type="text/javascript">
+		var obj = {};
+		obj.page1 = "这个段落是其父元素（body）的首个子元素。\
+			欢迎访问我的主页\
+			这个段落不是其父元素的首个子元素。\
+			这个段落是其父元素（div）的首个子元素。\
+			这个段落不是其父元素的首个子元素。\
+			注释：对于 IE8 及更早版本的浏览器中的 :first-child，必须声明 ";
+		obj.page2 = '{pageIndex} of {pageNumber}","ShowGrid":"Show Grid","ShowTimePeriod":"Show Time Period","color":"Color","FontColor":"Font Color","BackgroundColor":"Background Color","BorderColor":"Border Color","LineColor":"Line Color","DataSource":"Data Source","PeriodEndDate":"Period End Date","table":"Table","DataSet":"Data Set","ShowValue":"Show Value","ShowPercentage":"Show Percentage","ShowPeriodDate":"Show Period Date","ShowDate":"Show Date","chart":"Chart","up":"up","There are components, can not deploy layout anymore":"There are components, can not deploy layout anymore","down":"down","title":"Title","amountColor":"Amount Color","DataColor":"Data Color","GridLineColor":"Grid Line Color","AxisColor":"Axis Color","DataRange":"Data Range"';
+		obj.page3 = "特别是制表方面，还是table 比较的方便。\
+当然，制表肯定少不了边框，但是如果你直接在td上加边框，就会出现一种情况，table 的外围一周是单线，里面都是双线。";
+
+		$(function () {
+			$(".tableview .head td").click(function (e) {
+				$(".select").removeClass("select");
+				$(this).addClass("select");
+				$(".content").text(obj[$(this).attr("id")]);
+			})
+		});
+	</script>	
+</head>
+<body>
+<div class="tableview">
+	<div class="head">
+		<table>
+			<tr>
+				<td id="page1" class="select">Page 1</td>
+				<td id="page2">Page 2</td>
+				<td id="page3">Page 3</td>
+			</tr>
+		</table>
+	</div>
+	<div class="content">
+		<p>
+			这个段落是其父元素（body）的首个子元素。
+			欢迎访问我的主页
+			这个段落不是其父元素的首个子元素。
+			这个段落是其父元素（div）的首个子元素。
+			这个段落不是其父元素的首个子元素。
+			注释：对于 IE8 及更早版本的浏览器中的 :first-child，必须声明 
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
